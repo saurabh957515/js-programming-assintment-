@@ -1,0 +1,31 @@
+function isPalindrome(n)
+{
+    
+    var rev = 0;
+    for (var i = n; Math.trunc(i) > 0; i /= 10)
+    {
+        rev = ((rev*10) + (Math.trunc(i)%10));
+         
+        }
+ 
+    return (n==rev);
+}
+     
+var count = 0;
+
+function countPal(min,  max)
+
+{
+    for (var i = min; i <=max; i++)
+    {
+        if(isPalindrome(i))
+        
+        count++;
+       
+       }
+
+       console.log(count);
+}
+ 
+ 
+    countPal(1, 5);

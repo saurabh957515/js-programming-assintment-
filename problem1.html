@@ -1,0 +1,13 @@
+let num = 6;
+let common = 1;
+
+if (num < 0) {
+  console.log(`${num}! is not possible`);
+} else if (num == 0) {
+  console.log(`${num}!= 1`);
+} else {
+  for (let i = 1; i <= num; i++) {
+    common = common * i;
+  }
+  console.log(`${num}! = ${common}`);
+}
